@@ -41,9 +41,9 @@ export default function Contact({ selectedColor }) {
     }),
     onSubmit: () => {
       setIsSending(true);
-      emailjs.sendForm("service_a956386", "template_gppzjub", form.current, "jxvMRfPekobvvHOf1").then(
+      emailjs.sendForm("service_ii4lrol", "template_8cj5vjq", form.current, "sSUxd-15JpuCTbCrl").then(
         () => {
-          toast.success("Thanks for choosing our services!", {
+          toast.success("Thanks for message! I`ll contact you soon.", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -90,7 +90,7 @@ export default function Contact({ selectedColor }) {
             <div className="contact__contacts" style={{ color: selectedColor }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <BsFillTelephoneFill size={25} />
-                <a href="tel:+14251234563">+380 (97) 70-16-943</a>
+                <a href="tel:+380977016943">+380 (97) 70-16-943</a>
               </div>
 
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
