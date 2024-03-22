@@ -1,0 +1,56 @@
+.client__section {
+  background-color: rgb(44, 44, 44);
+}
+
+.client__slide-top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.client__slide-img {
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client__slide-title {
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+.client__slide-subtitle {
+  font-size: 18px;
+  color: rgb(200, 200, 200);
+}
+
+.quotes__start {
+  margin-right: 5px;
+}
+
+.quotes__end {
+  margin-left: 5px;
+}
+
+.client__slide-testimonial {
+  line-height: 1.4;
+  font-weight: 500;
+  color: #fff;
+}
+
+.swiper-pagination {
+  bottom: 20px;
+}
+
+.swiper-pagination-bullet {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 8px;
+  height: 8px;
+}
+
+.swiper-pagination-bullet-active {
+  transform: scale(1.6);
+}

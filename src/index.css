@@ -1,0 +1,114 @@
+:root {
+  font-family: Raleway, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0 16px 0 16px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+.section {
+  padding: 50px 0 50px 0;
+}
+
+.section__title {
+  font-size: 25px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.section__title > span {
+  font-weight: 600;
+}
+
+.section__subtitle {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 40px;
+
+  color: white;
+}
+
+.section__text {
+  line-height: 1.8;
+}
+
+.up__scroll {
+  position: fixed;
+  z-index: 9000;
+  bottom: 15px;
+  right: 15px;
+
+  opacity: 0.5;
+
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.up__scroll-icon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.up__scroll-icon:hover {
+  transform: scale(1.1);
+}
+
+.up__scroll.hidden {
+  transform: translateX(100px);
+}
+
+.up__scroll.show {
+  transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .section {
+    padding: 130px 0 130px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+}

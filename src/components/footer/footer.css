@@ -1,0 +1,33 @@
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.footer__section {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.footer__section {
+  padding: 30px 0 30px 0;
+}
+.footer__copyright {
+  color: #fff;
+}
+
+.footer__copyright div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 820px) {
+  .footer__section {
+    padding: 75px 0 75px 0;
+  }
+}
+@media (min-width: 1980px) {
+  .footer__section {
+    padding: 110px 0 110px 0;
+  }
+}
