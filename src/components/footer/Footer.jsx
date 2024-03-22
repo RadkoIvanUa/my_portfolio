@@ -38,6 +38,7 @@ export default function Footer({ selectedColor }) {
               viewport={{ once: true }}
               transition={{ ease: "easeOut", duration: 0.8, delay: 0.7 }}
               href="https://www.linkedin.com/in/ivan-radko/"
+              target="_blank"
             >
               <BsLinkedin size={20} color={"white"} />
             </motion.a>
@@ -47,6 +48,7 @@ export default function Footer({ selectedColor }) {
               viewport={{ once: true }}
               transition={{ ease: "easeOut", duration: 0.8, delay: 0.7 }}
               href="https://github.com/RadkoIvanUa"
+              target="_blank"
             >
               <FaGithub size={20} color={"white"} />
             </motion.a>
@@ -57,6 +59,7 @@ export default function Footer({ selectedColor }) {
               viewport={{ once: true }}
               transition={{ ease: "easeOut", duration: 0.8, delay: 0.6 }}
               href="https://www.facebook.com/ivan.radko.5"
+              target="_blank"
             >
               <BsFacebook size={20} color={"white"} />
             </motion.a>
@@ -67,6 +70,7 @@ export default function Footer({ selectedColor }) {
               viewport={{ once: true }}
               transition={{ ease: "easeOut", duration: 0.8, delay: 0.8 }}
               href="https://www.instagram.com/ivan_radko_/"
+              target="_blank"
             >
               <BsInstagram size={20} color={"white"} />
             </motion.a>
@@ -76,6 +80,7 @@ export default function Footer({ selectedColor }) {
               viewport={{ once: true }}
               transition={{ ease: "easeOut", duration: 0.8, delay: 0.8 }}
               href="https://www.youtube.com/channel/UCrzPRpvqlmKNoomqQa0eYgQ"
+              target="_blank"
             >
               <TfiYoutube size={20} color={"white"} />
             </motion.a>
