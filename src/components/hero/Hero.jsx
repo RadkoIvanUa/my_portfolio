@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import PropTypes from "prop-types";
 import "./hero.css";
 
@@ -10,7 +10,6 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import ParticlesComponent from "../particles/Particles";
 
 export default function Hero({ selectedColor, isParticleOn }) {
-  const [btnHovered, setBtnHovered] = useState(false);
   const windowSize = useRef([window.innerWidth]);
 
   const [text] = useTypewriter({
@@ -43,13 +42,13 @@ export default function Hero({ selectedColor, isParticleOn }) {
             <p className="hero__subtitle">from Kyiv, Ukraine.</p>
 
             <div className="hero__btn-container">
-              <button className="hero__btn" onMouseEnter={() => setBtnHovered(true)} onMouseLeave={() => setBtnHovered(false)}>
-                <a href="public\download__sample\IvanRadkoCV.pdf" download={true}>
+              <button className="hero__btn">
+                <a href={import.meta.env.VITE_CV_URL} download={true}>
                   Download CV
                 </a>
               </button>
-              <button className="hero__btn" onMouseEnter={() => setBtnHovered(true)} onMouseLeave={() => setBtnHovered(false)}>
-                <a href="public\download__sample\Ivan Radko_certeficate.pdf" download={true}>
+              <button className="hero__btn">
+                <a href={import.meta.env.VITE_CERTEFICATE_URL} download={true}>
                   Certeficate
                 </a>
               </button>
